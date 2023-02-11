@@ -1,0 +1,244 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    scroll-behavior: smooth;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+/*========== common ==========*/
+:root {
+    --primary-color: #ffb900;
+    --font-heading: "Sen", Arial, Helvetica, sans-serif;
+}
+.main-content {
+    width: 117rem;
+    max-width: calc(100% - 4.7rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+.btn {
+    border-radius: 999px;
+    text-align: center;
+    background: #171100;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 5rem;
+    min-width: 11.8rem;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 0 1.6rem;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/*========== Header ==========*/
+.header {
+    background: #fffcf4;
+}
+.header .body {
+    display: flex;
+    align-items: center;
+    padding: 3.6rem 0 0.8rem;
+}
+.header.fixed {
+    position: sticky;
+    top: -2.8rem;
+    z-index: 1;
+}
+.nav {
+    margin-left: auto;
+}
+.nav ul {
+    display: flex;
+}
+
+.nav ul a {
+    font-size: 1.6rem;
+    color: #5f5b53;
+    padding: 0.8rem 2.1rem;
+}
+.nav a:hover,
+.nav ul .active {
+    /* hover chu to ra nhung k day lui cac chu khac */
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+.nav ul .active {
+    position: relative;
+}
+
+.nav ul .active::before {
+    content: "";
+    width: 12px;
+    height: 2px;
+    background: #171100;
+    border-radius: 1px;
+    position: absolute;
+    bottom: 6px;
+    left: 21px;
+}
+
+.header .btn-sign-up {
+    min-width: 11.2rem;
+    margin-left: 4.9rem;
+}
+
+/*========== Hero ==========*/
+.hero {
+    padding-top: 5.8rem;
+    background-color: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+/* Hero left */
+.hero .media-block {
+    width: 48%;
+    position: relative;
+}
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    border-radius: 2rem;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-summary {
+    position: absolute;
+    right: 0;
+    bottom: 4.8rem;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    width: 27rem;
+    padding: 2.4rem 0 2.4rem 2.4rem;
+}
+.hero-summary .item {
+    display: flex;
+}
+.hero-summary .item + .item {
+    margin-top: 2.2rem;
+}
+
+.hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    background: #fff9e8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.6rem;
+}
+
+.hero-summary .item:nth-of-type(2) .icon {
+    background: #fcefff;
+}
+.hero-summary .item:nth-of-type(3) .icon {
+    background: #ebeaff;
+}
+
+.hero-summary .label {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.hero-summary .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
+}
+
+/* Hero right */
+.hero .content-block {
+    width: 52%;
+    padding: 6.4rem 0 0 13rem;
+}
+
+.hero .content-block .heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.17;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+
+.hero .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #5f5b53;
+    margin-top: 2.2rem;
+}
+
+.hero .cta-group {
+    margin: 3.8rem 0 4.8rem;
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-cta {
+    min-width: 18rem;
+    font-weight: 600;
+    font-size: 1.8;
+    line-height: 64px;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--primary-color);
+}
+
+.hero .watch-video {
+    margin-left: 2.6rem;
+    border: none;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    cursor: pointer;
+}
+
+.hero .watch-video .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .watch-video span {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-left: 1.4rem;
+    line-height: 1.67;
+    color: #171100;
+}
+.hero .stats {
+    margin: 0.8rem 0 0 -2.8rem;
+}
+
+.hero .stats strong {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    color: #171100;
+    padding: 0 0.6rem 0 2.8rem;
+}
