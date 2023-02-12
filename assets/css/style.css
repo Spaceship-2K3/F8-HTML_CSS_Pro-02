@@ -1,6 +1,5 @@
 html {
     font-size: 62.5%;
-    box-sizing: border-box;
 }
 
 body {
@@ -9,6 +8,7 @@ body {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 400;
     background: #f6f6f6;
+    box-sizing: border-box;
 }
 
 /*========== common ==========*/
@@ -461,4 +461,64 @@ a {
     font-size: 2.6rem;
     line-height: 1.54;
     font-style: italic;
+}
+
+/*========== Features ==========*/
+.features {
+    margin-top: 13.5rem;
+    padding: 6.5rem 0;
+}
+
+.features .body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .body .images {
+    display: flex;
+    gap: 0 3rem;
+}
+
+.features .images img {
+    width: 27rem;
+    height: 40.4rem;
+    object-fit: cover;
+    border-radius: 1.6rem;
+}
+
+.features .images .lower {
+    margin-top: 3.4rem;
+}
+
+.features .content {
+    width: 41%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.features .content .desc {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    margin-top: 1.6rem;
+    color: #5f5b53;
+}
+
+.features .content .cta-btn {
+    background-color: var(--primary-color);
+    margin-top: 3.2rem;
+    min-width: 13.7rem;
+}
+.features-2nd {
+    margin-top: 7rem;
+}
+
+.features-2nd .body .content {
+    width: 49%;
+}
+
+.features-2nd .body .images img {
+    width: 47rem;
+    height: 44rem;
 }
